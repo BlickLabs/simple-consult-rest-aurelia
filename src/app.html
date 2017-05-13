@@ -1,8 +1,8 @@
 <template>
   <require from="./cierraloBuilding"></require>
-
-  <input type="text" ref="name">
-  <input type="text" ref="paraelcheeks">
-  <cierralo-building to.bind="name.value" cheeks.bind="paraelcheeks.value"></cierralo-building>
-  <h1>${message}</h1>
+  <h1>${title}</h1>
+  <div repeat.for="item of buildings">
+    <cierralo-building building.bind="item"></cierralo-building>
+  </div>
+  <input type="text" ref="precio">
 </template>
