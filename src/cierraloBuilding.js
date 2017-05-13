@@ -5,10 +5,7 @@ import {customElement, bindable} from 'aurelia-framework';
 
 @customElement('cierralo-building')
 export class Building {
-  @bindable to;
-  @bindable cheeks;
-
-  speak(){
-    alert(`Hello ${this.to}!`);
+  constructor (precio) {
+    this.precio = precio;
   }
 }
