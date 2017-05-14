@@ -5,6 +5,8 @@ import {customElement, bindable} from 'aurelia-framework';
 
 @customElement('cierralo-building')
 export class Building {
+  @bindable building;
+
   constructor (precio) {
     this.precio = precio;
   }
